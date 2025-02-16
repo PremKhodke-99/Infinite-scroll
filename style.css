@@ -15,8 +15,11 @@ body {
 
 .carousel-container {
     position: relative;
-    width: 60%;
+    height: 100%;
+    width: 80%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .carousel-wrapper {
@@ -26,6 +29,7 @@ body {
 
 .carousel-card {
     min-width: calc(100% / 3);
+    height: 400px;
     padding: 20px;
     text-align: center;
     background: white;
@@ -36,7 +40,7 @@ body {
 
 .carousel-btn {
     position: absolute;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     background: #333;
     color: white;
