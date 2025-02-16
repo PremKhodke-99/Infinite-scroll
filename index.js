@@ -38,7 +38,7 @@ class Carousel {
       this.scrollPosition += this.cardWidth;
       this.updateCarousel();
       setTimeout(() => {
-        this.scrollPosition = this.cardWidth * this.visibleCards; // Reset to first real card
+        this.scrollPosition = this.cardWidth * this.visibleCards + this.cardWidth; // Reset to first real card
         this.carousel.style.transition = "none";
         this.carousel.style.transform = `translateX(-${this.scrollPosition}px)`;
       }, 500);
